@@ -58,8 +58,23 @@
 .header__logo {
     display: block;
 }
+// HEADER MEDIA 
+@media screen and (max-width: 768px){
+    .container{
+        padding: 0 40px;
+
+    }
+    .navbar{
+        padding: 30px 0;
+    }
+}
 
 
+
+
+
+
+// END HEADER Style
 
 
 
@@ -160,8 +175,12 @@
         }
     }
 }
+// HERO media
 
 
+
+
+//  END HERO style
 
 // ABOUT STYLE
 .about__section {
