@@ -1,0 +1,62 @@
+// FOOTER STYLE
+
+footer {
+    background-color: #1B262F;
+    width: 100%;
+}
+
+.footer {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .social {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        li {
+            list-style: none;
+            margin-left: 30px;
+
+            a>svg:hover path {
+                fill: #DA6D97;
+            }
+        }
+    }
+}
+
+.footer__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .menu__items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .footer__item {
+            list-style: none;
+            margin-left: 30px;
+
+            .menu__link {
+                font-size: 15px;
+                line-height: 18px;
+                color: #FBFCFE;
+                mix-blend-mode: normal;
+                opacity: 0.7;
+                text-decoration: none;
+                transition: all .4s;
+
+                &:hover {
+                    color: #fff;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+// END FOOTER STYLE
