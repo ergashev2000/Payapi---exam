@@ -312,6 +312,10 @@ template {
   font-family: "PublicSans-VariableFont_wght";
   src: url(../fonts/PublicSans-VariableFont_wght.ttf);
 }
+@font-face {
+  font-family: "DMSerifDisplay-Regular";
+  src: url(../fonts/DMSerifDisplay-Regular.ttf);
+}
 html {
   height: 100%;
   box-sizing: border-box;
@@ -331,6 +335,7 @@ body {
   font-family: "PublicSans-VariableFont_wght";
   margin: 0;
   padding: 0;
+  background: #EDF3F8;
 }
 
 img {
@@ -409,4 +414,80 @@ img {
 .navbar .navbar__btn__link:hover {
   background: #DA6D97;
   box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+}
+
+.hero {
+  position: relative;
+}
+.hero .hero__text::after {
+  content: "";
+  position: absolute;
+  width: 780px;
+  height: 780px;
+  left: 700px;
+  top: -100px;
+  border-radius: 50%;
+  background: rgba(54, 83, 107, 0.3882352941);
+  z-index: -9;
+  transform: translateY(-300px);
+}
+.hero .hero__text::before {
+  content: url(../images/banner.png);
+  position: absolute;
+  right: 50px;
+  top: -50px;
+}
+.hero .hero__text .hero__text__title {
+  font-size: 72px;
+  line-height: 72px;
+  letter-spacing: -0.553846px;
+  color: #36536B;
+  font-family: "DMSerifDisplay-Regular";
+  width: 45%;
+}
+.hero .hero__text .hero__label {
+  outline: none;
+}
+.hero .hero__text .email__input {
+  padding: 16px 270px 16px 27px;
+  background: #FBFCFE;
+  box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+  border-radius: 30px;
+  outline: 1px solid transparent;
+  border: none;
+  font-size: 15px;
+}
+.hero .hero__text .hero__text__input {
+  position: relative;
+}
+.hero .hero__text .hero__text__input .hero__input__btn {
+  padding: 16px 25px;
+  background: #BA4270;
+  border-radius: 30px;
+  transition: all 0.4s;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-size: 15px;
+  position: absolute;
+  left: 310px;
+}
+.hero .hero__text .hero__text__input .hero__input__btn:hover {
+  background: #DA6D97;
+}
+.hero .hero__text .contact__us {
+  padding: 20px;
+}
+.hero .hero__text .contact__us p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #36536B;
+  mix-blend-mode: normal;
+  opacity: 0.7;
+}
+.hero .hero__text .contact__us p a {
+  color: #000;
+  font-weight: 700;
+  text-decoration: none;
 }/*# sourceMappingURL=main.css.map */
